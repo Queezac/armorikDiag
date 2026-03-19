@@ -1,7 +1,16 @@
-export default function Blog() {
+import { getArticles } from "@/lib/articles";
+import { CardArticle } from "../articles/CardArticle";
+
+export default async function Blog() {
+    const { articles } = await getArticles(4);
     return (
-        <section id="blog">
-            <h2 className="section" style={{ paddingBottom: '5vh' }}>BLOG</h2>
-        </section>
+    <section id="blog">
+    <h2 className="section" style={{ paddingBottom: '5vh' }}>BLOG</h2>
+    <ul className="blog-grid">
+        {articles.map((article) => (
+            <CardArticle key={article.id} article={article} />
+        ))}
+    </ul>
+</section>
     );
 }

@@ -1635,3 +1635,27 @@ body.noscroll {
 .mobile-only {
     display: none;
 }
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding-bottom: 5vh;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6em;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: calc(320px * 2 + 6em);
+}
+
+.blog-grid>div {
+    flex: 0 1 320px;
+}

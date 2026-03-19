@@ -1,15 +1,18 @@
 import { Article, getAssetUrl } from "@/lib/directus";
 import Image from "next/image";
 import Link from "next/link";
+import { CSSProperties } from "react";
 import styles from "./CardArticle.module.css";
 
 export const CardArticle = ({
-  article
+  article,
+  props_styles
 } : {
-  article: Article
+  article: Article,
+  props_styles?: CSSProperties
 }) => {
   return (
-    <div key={article.id} className={styles.articleCard}>
+    <div key={article.id} className={styles.articleCard} style={props_styles}>
       <Link href={`/blog/${article.slug}`} className={styles.cardLink}>
         {article.cover_image && (
           <div className={styles.cardImageWrapper}>

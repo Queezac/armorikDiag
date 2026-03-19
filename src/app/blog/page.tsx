@@ -1,7 +1,7 @@
 import { CardArticle } from "@/components/articles/CardArticle";
 import Pagination from "@/components/articles/Pagination";
 import SearchInput from "@/components/articles/SearchInput";
-import { getArticles } from "@/lib/directus";
+import { getArticles } from "@/lib/articles";
 import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";

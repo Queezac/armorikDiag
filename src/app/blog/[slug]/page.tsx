@@ -1,9 +1,5 @@
-import {
-  getAllSlugs,
-  getArticleBySlug,
-  getAssetUrl,
-  type Article,
-} from "@/lib/directus";
+import { getAllSlugs, getArticleBySlug } from "@/lib/articles";
+import { Article, getAssetUrl } from "@/lib/directus";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
