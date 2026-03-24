@@ -55,6 +55,7 @@ export default function Footer() {
             <p className="coord-footer" style={{ fontSize: '20px' }}><a href="mailto:contact@armorik-diagnostics.fr">contact@armorik-diagnostics.fr</a></p>
           </article>
         </div>
+        <span className="separateurs separateur-interligne"></span>
         <div className="coordligne2">
           <article className="coord">
             <span className="imgCoord rose"><i className="fab fa-facebook"></i></span>

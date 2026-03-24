@@ -4,27 +4,6 @@ import Image from "next/image";
 export default function MentionLegales() {
   return (
     <>
-      <header className="navbar">
-        <div className="logo">
-          <Link href="/">
-            <Image src="/assets/img/logo1.png" alt="Logo Armorik Diagnostics" width={150} height={50} style={{ objectFit: 'contain' }} />
-          </Link>
-        </div>
-    
-        <nav className="menu" aria-label="Menu principal">
-          <ul>
-            <li><Link href="/">ACCUEIL</Link></li>
-            <li><Link href="/#diagnostics">NOS DIAGNOSTICS</Link></li>
-            <li><Link href="/#devis">DEVIS</Link></li>
-            <li><Link href="/#service">NOS SERVICES</Link></li>
-          </ul>
-        </nav>
-    
-        <div className="right">
-          <Link href="/#contact" className="btn-contact">NOUS CONTACTER</Link>
-        </div>
-      </header>
-
       <main className="mentionLegales" style={{ backgroundColor: '#f5f5f5', padding: '10vh 10vw', minHeight: '80vh' }}>
         <h1 className="rose" style={{ paddingTop: 0 }}>Mentions légales</h1>
 

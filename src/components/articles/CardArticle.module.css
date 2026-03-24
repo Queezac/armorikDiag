@@ -8,6 +8,11 @@
   flex-direction: column;
 }
 
+.articleCard.withImage {
+  height: auto;
+  min-height: 45vh;
+}
+
 .cardLink {
   display: flex;
   flex-direction: column;
@@ -19,7 +24,8 @@
 .cardImageWrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 20vh;
+  flex-shrink: 0;
   overflow: hidden;
   background: #eee;
 }
@@ -29,7 +35,8 @@
 }
 
 .cardImagePlaceholder {
-  aspect-ratio: 16 / 9;
+  height: 20vh;
+  flex-shrink: 0;
   background: linear-gradient(135deg, #1a1a2e, #0f3460);
   display: flex;
   align-items: center;
@@ -105,4 +112,22 @@
 
 .readMore:hover {
   background-color: #c20542;
+}
+
+@media (max-width: 1100px) {
+  .articleCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .articleCard, .articleCard.withImage {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+  }
+  .readMore {
+    margin: 20px;
+    padding: 10px;
+  }
 }

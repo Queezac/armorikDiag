@@ -60,3 +60,11 @@
   color: #E3074F;
   background-color: rgba(227, 7, 79, 0.05);
 }
+
+
+@media (max-width: 768px) {
+  .searchContainer {
+    padding: 0;
+  }
+
+}

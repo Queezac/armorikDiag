@@ -655,6 +655,7 @@ body.noscroll {
 #textService p {
     margin: 1vw 2vw;
     line-height: 1.5;
+    text-align: justify;
 }
 
 #certifs {
@@ -722,6 +723,7 @@ body.noscroll {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s;
+    gap: 5vw;
 }
 
 .faq-question:hover {
@@ -973,7 +975,7 @@ body.noscroll {
 }
 
 
-/****************************************/
+/***************** BLOG ***********************/
 
 #blog {
     display: flex;
@@ -982,6 +984,7 @@ body.noscroll {
     justify-content: center;
     gap: 32px;
     padding-bottom: 5vh;
+    padding-top: 2vh;
 }
 
 .blog-grid {
@@ -1227,9 +1230,9 @@ body.noscroll {
     }
 
     #textService p {
-        text-align: center;
         margin: 10px 20px;
         font-size: 1rem !important;
+        text-align: justify;
     }
 
     #coordonnees {
@@ -1681,8 +1684,48 @@ body.noscroll {
         font-size: 0.95rem;
         padding: 0 20px 20px 20px;
     }
+
+    .mention-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mention-images img {
+        height: 4vh;
+    }
 }
 
 .mobile-only {
     display: none;
+}
+
+@media (max-width: 1100px) {
+    .blog-grid {
+        gap: 3vw;
+        max-width: 90vw;
+    }
+
+    .blog-grid>div {
+        flex: 1 1 40%;
+    }
+}
+
+.separateur-interligne {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        flex-direction: column;
+        gap: 24px;
+        max-width: 90vw;
+    }
+
+    .blog-grid>div {
+        flex: 1 1 100%;
+    }
+
+    .separateur-interligne {
+        display: block;
+    }
 }

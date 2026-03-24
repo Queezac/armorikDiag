@@ -6,19 +6,30 @@ import styles from "./CardArticle.module.css";
 
 export const CardArticle = ({
   article,
-  props_styles
+  props_styles,
+  showImage = false
 }: {
   article: Article,
-  props_styles?: CSSProperties
+  props_styles?: CSSProperties,
+  showImage?: boolean
 }) => {
   return (
-    <div key={article.id} className={styles.articleCard} style={props_styles}>
-      <Link href={`/blog/${article.slug}`} className={styles.cardLink}>
-        {!article.cover_image && (
+    <div key={article.id} className={`${styles.articleCard} ${showImage ? styles.withImage : ''}`} style={props_styles}>
+      <div className={styles.cardLink}>
+        {showImage && article.cover_image ? (
+          <div className={styles.cardImageWrapper}>
+            <img
+              src={getAssetUrl(article.cover_image, 600)}
+              alt={`Couverture de ${article.title}`}
+              className={styles.cardImage}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+        ) : !article.cover_image ? (
           <div className={styles.cardImagePlaceholder}>
             <i className="fas fa-file-alt fa-2x" aria-hidden="true" />
           </div>
-        )}
+        ) : null}
         <div className={styles.cardBody}>
           <div className={styles.cardMeta}>
             <i className="fas fa-calendar" aria-hidden="true" style={{ color: "#888", fontSize: "0.8rem" }} />
@@ -36,11 +47,11 @@ export const CardArticle = ({
           <p className={styles.cardDescription}>
             {article.description}
           </p>
-          <span className={styles.readMore}>
+          <Link href={`/blog/${article.slug}`} className={styles.readMore}>
             Lire l&apos;article{" "}
-          </span>
+          </Link>
         </div>
-      </Link>
+      </div>
     </div>
   )
 }

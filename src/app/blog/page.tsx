@@ -61,7 +61,7 @@ export default async function BlogPage({
           <>
             <ul className={styles.articleGrid} role="list">
               {articles.map((article) => (
-                <CardArticle key={article.id} article={article} />
+                <CardArticle key={article.id} article={article} showImage={true} />
               ))}
             </ul>
             <Pagination currentPage={page} hasNextPage={hasNextPage} searchQuery={q} />

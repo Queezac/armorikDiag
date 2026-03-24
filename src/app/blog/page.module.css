@@ -14,21 +14,6 @@
   color: #E3074F;
 }
 
-.blogTitle {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 16px;
-  letter-spacing: -0.02em;
-}
-
-.blogSubtitle {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.1rem;
-  line-height: 25px;
-  margin: 0 auto;
-}
-
 .blogMain {
   min-height: 60vh;
   padding: 60px 40px;
@@ -80,7 +65,11 @@
 
 @media (max-width: 768px) {
   .blogHeader {
-    padding: 80px 20px 40px;
+    display: none;
+  }
+
+  :global(.ligneNoire2) {
+    display: none;
   }
 
   .blogMain {
@@ -94,5 +83,9 @@
 
   .backLink {
     left: 16px;
+  }
+
+  .blogSubtitle {
+    font-size: 4vw;
   }
 }

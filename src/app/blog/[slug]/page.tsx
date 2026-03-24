@@ -115,46 +115,62 @@ export default async function ArticlePage({
       <ArticleJsonLd article={article} />
 
       <header className={styles.articleHeader}>
-        <div className={styles.headerContent}>
-          <nav aria-label="Fil d'ariane" className={styles.breadcrumb}>
-            <Link href="/">Accueil</Link>
-            <span aria-hidden> / </span>
-            <Link href="/blog">Blog</Link>
-            <span aria-hidden> / </span>
-            <span aria-current="page">{article.title}</span>
-          </nav>
+      </header>
 
-          <h1 className={styles.articleTitle}>{article.title}</h1>
-          <p className={styles.articleDescription}>{article.description}</p>
+      <hr className="ligneNoire2" aria-hidden="true" />
 
-          <div className={styles.articleMeta}>
-            <span>
-              Publié le{" "}
-              <time dateTime={article.date_created}>
-                {new Date(article.date_created).toLocaleDateString("fr-FR", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </time>
-            </span>
-            {article.date_updated && article.date_updated !== article.date_created && (
+      <main className={styles.articleMain}>
+
+        <article>
+          <div className={styles.headerContent}>
+            <nav aria-label="Fil d'ariane" className={styles.breadcrumb}>
+              <Link href="/">Accueil</Link>
+              <span aria-hidden> / </span>
+              <Link href="/blog">Blog</Link>
+              <span aria-hidden> / </span>
+              <span aria-current="page">{article.title}</span>
+            </nav>
+
+            <h1 className={styles.articleTitle}>{article.title}</h1>
+
+            {imageUrl && (
+              <div className={styles.coverImageWrapper}>
+                <img
+                  src={imageUrl}
+                  alt={`Couverture de l'article ${article.title}`}
+                  className={styles.coverImage}
+                  style={{ width: '100%', height: '40vh' }}
+                />
+              </div>
+            )}
+
+            <div className={styles.articleMeta}>
               <span>
-                · Mis à jour le{" "}
-                <time dateTime={article.date_updated}>
-                  {new Date(article.date_updated).toLocaleDateString("fr-FR", {
+                Publié le{" "}
+                <time dateTime={article.date_created}>
+                  {new Date(article.date_created).toLocaleDateString("fr-FR", {
                     day: "numeric",
                     month: "long",
                     year: "numeric",
                   })}
                 </time>
               </span>
-            )}
-          </div>
-        </div>
-      </header>
+              {article.date_updated && article.date_updated !== article.date_created && (
+                <span style={{ color: "#888" }}>
+                  · Mis à jour le{" "}
+                  <time dateTime={article.date_updated}>
+                    {new Date(article.date_updated).toLocaleDateString("fr-FR", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </time>
+                </span>
+              )}
+            </div>
 
-      <main className={styles.articleMain}>
+          </div>
+        </article>
         <article className={styles.articleContent}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}

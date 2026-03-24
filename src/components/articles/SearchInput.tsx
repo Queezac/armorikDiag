@@ -8,7 +8,7 @@ import styles from "./SearchInput.module.css";
 export default function SearchInput() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  
+
   const [query, setQuery] = useState(searchParams.get("q") || "");
   const debouncedQuery = useDebounce(query, 500);
 
@@ -20,13 +20,13 @@ export default function SearchInput() {
       params.delete("q");
     }
     params.delete("page");
-    
+
     router.push(`?${params.toString()}`);
   }, [searchParams, router]);
 
   useEffect(() => {
     if (debouncedQuery !== (searchParams.get("q") || "")) {
-       handleSearch(debouncedQuery);
+      handleSearch(debouncedQuery);
     }
   }, [debouncedQuery, handleSearch, searchParams]);
 
@@ -47,8 +47,8 @@ export default function SearchInput() {
           aria-label="Rechercher un article"
         />
         {query && (
-          <button 
-            onClick={resetSearch} 
+          <button
+            onClick={resetSearch}
             className={styles.clearButton}
             aria-label="Effacer la recherche"
           >
