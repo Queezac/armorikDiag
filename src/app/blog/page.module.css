@@ -1,6 +1,7 @@
 .blogHeader {
-  background: linear-gradient(135deg, #1A1A1A 0%, #282828 100%);
+  background: url("/assets/img/fondBlog.jpg") center/cover no-repeat;
   padding: 80px 40px 60px;
+  height: 30vh;
   text-align: center;
   position: relative;
 }
@@ -24,16 +25,29 @@
 .blogSubtitle {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.1rem;
-  max-width: 550px;
+  line-height: 25px;
   margin: 0 auto;
 }
 
 .blogMain {
-  background: #f7f8fc;
   min-height: 60vh;
   padding: 60px 40px;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.blogTitle {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.blogSubtitle {
+  text-align: center;
+  color: black;
+  font-size: 1vw;
 }
 
 .noArticles {

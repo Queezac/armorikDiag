@@ -1,7 +1,7 @@
 .searchContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 4rem 0 3rem 0;
   padding: 0 1rem;
 }
 
@@ -24,11 +24,9 @@
 .searchInput {
   width: 100%;
   padding: 1rem 3rem 1rem 3rem;
-  border-radius: 50px;
   border: 1px solid #e0e0e0;
   font-size: 1rem;
   font-family: inherit;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
   background-color: white;
 }
@@ -36,7 +34,6 @@
 .searchInput:focus {
   outline: none;
   border-color: #E3074F;
-  box-shadow: 0 4px 20px rgba(227, 7, 79, 0.15);
 }
 
 .searchInput::placeholder {

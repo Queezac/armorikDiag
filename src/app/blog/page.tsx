@@ -41,16 +41,16 @@ export default async function BlogPage({
   return (
     <>
       <header className={styles.blogHeader}>
-        <Link href="/" className={styles.backLink}>
-          <i className="fas fa-arrow-left" aria-hidden="true" /> Retour au site
-        </Link>
-        <h1 className={styles.blogTitle}>Notre Blog</h1>
-        <p className={styles.blogSubtitle}>
-          Conseils, actualités et guides sur les diagnostics immobiliers
-        </p>
       </header>
 
+      <hr className="ligneNoire2" aria-hidden="true" />
+
       <main className={styles.blogMain}>
+        <h1 className={styles.blogTitle}>BLOG</h1>
+        <p className={styles.blogSubtitle}>
+          L'actualité immobilière vue par nos experts :<br />des analyses claires et des conseils pratiques pour vous accompagner dans tous vos projets de vente ou de location.
+        </p>
+
         <SearchInput />
 
         {articles.length === 0 ? (

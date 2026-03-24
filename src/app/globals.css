@@ -973,6 +973,57 @@ body.noscroll {
 }
 
 
+/****************************************/
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding-bottom: 5vh;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em 6em;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: calc(20vw * 3 + 12em);
+}
+
+.blog-grid>div {
+    flex: 0 1 20vw;
+}
+
+.ListeBlog {
+    text-decoration: none;
+    background-color: white;
+    color: #E3074F;
+    border: solid 1px #E3074F;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin: 3vh 0;
+}
+
+.ListeBlog:hover {
+    background-color: #E3074F;
+    color: white;
+}
+
+
+
+
+
+
+
+
 /* Conteneur de notifications */
 #toast-container {
     position: fixed;
@@ -1634,28 +1685,4 @@ body.noscroll {
 
 .mobile-only {
     display: none;
-}
-
-#blog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    padding-bottom: 5vh;
-}
-
-.blog-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6em;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-width: calc(320px * 2 + 6em);
-}
-
-.blog-grid>div {
-    flex: 0 1 320px;
 }
