@@ -5,6 +5,8 @@ import Faq from "@/components/home/Faq";
 import Services from "@/components/home/Services";
 import Image from "next/image";
 
+export const revalidate = 60;
+
 export default function Home() {
   return (
     <>
@@ -58,9 +60,7 @@ export default function Home() {
 
         <Faq />
 
-        {/*
         <Blog />
-        */}
 
       </main>
     </>
