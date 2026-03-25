@@ -3,7 +3,6 @@ import Pagination from "@/components/articles/Pagination";
 import SearchInput from "@/components/articles/SearchInput";
 import { getArticles } from "@/lib/articles";
 import type { Metadata } from "next";
-import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -25,6 +24,8 @@ export const metadata: Metadata = {
 
 export const revalidate = 0;
 
+const PAGE_LIMIT = 6;
+
 export default async function BlogPage({
   searchParams,
 }: {
@@ -35,7 +36,6 @@ export default async function BlogPage({
   const pageParam = typeof resolvedSearchParams.page === "string" ? resolvedSearchParams.page : "1";
   const page = parseInt(pageParam, 10) || 1;
 
-  const PAGE_LIMIT = 12;
   const { articles, hasNextPage } = await getArticles(PAGE_LIMIT, page, q);
 
   return (

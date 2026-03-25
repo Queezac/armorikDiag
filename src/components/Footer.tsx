@@ -60,7 +60,7 @@ export default function Footer() {
           <article className="coord">
             <span className="imgCoord rose"><i className="fab fa-facebook"></i></span>
             <h3 className="title-footer">Facebook</h3>
-            <p className="coord-footer" style={{ fontSize: '20px' }}><a href="https://www.facebook.com/profile.php?id=61588626631757" target="_blank">www.facebook.com/armorikdiagnostics</a></p>
+            <p className="coord-footer" style={{ fontSize: '20px' }}><a href="https://www.facebook.com/profile.php?id=61588626631757" target="_blank">Armorik Diagnostics</a></p>
           </article>
           <span className="separateurs"></span>
           <article className="coord">
@@ -71,8 +71,8 @@ export default function Footer() {
           <span className="separateurs"></span>
           <article className="coord">
             <span className="imgCoord rose"><i className="fab fa-linkedin"></i></span>
-            <h3 className="title-footer">Instagram</h3>
-            <p className="coord-footer" style={{ fontSize: '20px' }}><a href="https://www.linkedin.com/in/virginie-le-noa-pellaé-58b390194/" target="_blank">www.linkedin.com/armorikdiagnostics</a></p>
+            <h3 className="title-footer">Linkedin</h3>
+            <p className="coord-footer" style={{ fontSize: '20px' }}><a href="https://www.linkedin.com/in/virginie-le-noa-pellaé-58b390194/" target="_blank">Armorik Diagnostics</a></p>
           </article>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { getAllSlugs } from "@/lib/directus";
+import { getAllSlugs } from "@/lib/articles";
 import { MetadataRoute } from "next";
 
 export const revalidate = 3600;

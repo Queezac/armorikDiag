@@ -1,9 +1,11 @@
-import Link from "next/link";
 import { getArticles } from "@/lib/articles";
+import Link from "next/link";
 import { CardArticle } from "../articles/CardArticle";
 
+const ARTICLE_LIMIT = 12;
+
 export default async function Blog() {
-    const { articles } = await getArticles(9);
+    const { articles } = await getArticles(ARTICLE_LIMIT);
     return (
         <section id="blog">
             <h2 className="section" style={{ paddingBottom: '5vh' }}>BLOG</h2>
