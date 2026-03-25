@@ -1,8 +1,9 @@
+import Blog from "@/components/home/Blog";
 import DevisForm from "@/components/home/DevisForm";
 import Diagnostics from "@/components/home/Diagnostics";
-import Services from "@/components/home/Services";
-import Blog from "@/components/home/Blog";
 import Faq from "@/components/home/Faq";
+import Services from "@/components/home/Services";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,6 +14,14 @@ export default function Home() {
         </h1>
 
         <section className="hero" aria-labelledby="intro-title">
+          <Image
+            src="/assets/img/fondPremierePage.png"
+            alt="Background Armorik Diagnostics"
+            fill
+            style={{ objectFit: "cover", objectPosition: "center", zIndex: -1 }}
+            loading="lazy"
+            quality={100}
+          />
           <div className="presentation">
             <div className="carreRose">
               <a href="#devis" className="btn-carre"><i className="fas fa-file-text">&nbsp;</i>DEVIS GRATUIT</a>

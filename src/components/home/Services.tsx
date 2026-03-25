@@ -3,6 +3,14 @@ import Image from "next/image";
 export default function Services() {
   return (
     <section id="service" aria-labelledby="service-title">
+      <Image
+        src="/assets/img/fondServices.png"
+        alt="Background Services Armorik Diagnostics"
+        fill
+        style={{ objectFit: "cover", objectPosition: "center", zIndex: -1 }}
+        loading="lazy"
+        quality={100}
+      />
       <div id="fondService">
         <h2 className="section" style={{ paddingBottom: '5vh' }}>À PROPOS DE NOUS</h2>
         <div id="textService">

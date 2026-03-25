@@ -168,7 +168,6 @@ p {
 
 .hero {
     height: 80vh;
-    background: url("/assets/img/fondPremierePage.png") center/cover no-repeat;
     color: white;
     position: relative;
     z-index: 1;
@@ -623,7 +622,6 @@ body.noscroll {
 
 #service {
     height: 100%;
-    background: url("/assets/img/fondServices.png") center/cover no-repeat;
     color: white;
     position: relative;
     z-index: 1;
