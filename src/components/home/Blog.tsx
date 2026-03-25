@@ -24,9 +24,11 @@ export default async function Blog() {
                 }
             </ul>
 
-            <Link href="/blog" className="ListeBlog">
-                Voir tous les articles
-            </Link>
+            {articles.length > 0 && (
+                <Link href="/blog" className="ListeBlog">
+                    Voir tous les articles
+                </Link>
+            )}
         </section>
     );
 }
