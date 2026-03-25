@@ -89,7 +89,7 @@ export default function Navbar() {
           <li><a href="#devis" className={activeMenuId === "devis" ? "active" : ""} onClick={(e) => handleNavClick(e, "devis")}>DEVIS</a></li>
           <li><a href="#service" className={activeMenuId === "service" ? "active" : ""} onClick={(e) => handleNavClick(e, "service")}>À PROPOS</a></li>
           <li><a href="#faq" className={activeMenuId === "faq" ? "active" : ""} onClick={(e) => handleNavClick(e, "faq")}>FAQ</a></li>
-          <li><a href="#blog" className={activeMenuId === "blog" ? "active" : ""} onClick={(e) => handleNavClick(e, "blog")}>BLOG</a></li>
+          {/*<li><a href="#blog" className={activeMenuId === "blog" ? "active" : ""} onClick={(e) => handleNavClick(e, "blog")}>BLOG</a></li>*/}
           <li className="mobile-only"><a href="#contact" className="btn-contact" onClick={(e) => handleNavClick(e, "contact")}>NOUS CONTACTER</a></li>
         </ul>
       </nav>

@@ -58,7 +58,9 @@ export default function Home() {
 
         <Faq />
 
+        {/*
         <Blog />
+        */}
 
       </main>
     </>
