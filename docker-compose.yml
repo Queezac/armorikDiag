@@ -7,9 +7,3 @@ services:
     env_file:
       - .env
     restart: always
-    networks:
-      - web-network
-
-networks:
-  web-network:
-    external: true
