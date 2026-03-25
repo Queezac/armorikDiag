@@ -31,8 +31,7 @@ export async function POST(req: Request) {
       html: `<strong>${message.replace(/\n/g, '<br>')}</strong>`,
     };
 
-    //await transporter.sendMail(mailOptions);
-    console.log(mailOptions);
+    await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true });
   } catch (error: any) {
     console.error("ERREUR SMTP :", error);
