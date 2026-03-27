@@ -13,8 +13,17 @@ export default function LivePreview({ initialArticle }: LivePreviewProps) {
 
   useEffect(() => {
     const onMessage = (event: MessageEvent) => {
-      if (typeof event.data === "object" && event.data?.type === "directus-update") {
-        setArticle((prev) => ({ ...prev, ...event.data.item }));
+      const data = event.data;
+
+      console.log("receive message", data);
+
+      if (!data || typeof data !== "object") return;
+      
+      const isUpdateEvent = data.action === "update" || data.type === "directus-update" || data.type === "preview";
+      const updatedFields = data.data || data.item || data.payload;
+
+      if (isUpdateEvent && updatedFields) {
+        setArticle((prev) => ({ ...prev, ...updatedFields }));
       }
     };
     window.addEventListener("message", onMessage);
