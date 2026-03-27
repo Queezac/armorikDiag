@@ -1,4 +1,4 @@
-import { createDirectus, rest } from "@directus/sdk";
+import { createDirectus, rest, staticToken } from "@directus/sdk";
 
 export interface Article {
   id: number;
@@ -24,7 +24,13 @@ export function getClient() {
       "NEXT_PUBLIC_DIRECTUS_URL n'est pas défini dans .env.local"
     );
   }
-  return createDirectus<DirectusSchema>(DIRECTUS_URL).with(rest());
+  let client = createDirectus<DirectusSchema>(DIRECTUS_URL).with(rest());
+  
+  if (process.env.DIRECTUS_TOKEN) {
+    client = client.with(staticToken(process.env.DIRECTUS_TOKEN));
+  }
+  
+  return client;
 }
 
 export function getAssetUrl(fileId: string | null, width = 1200): string {

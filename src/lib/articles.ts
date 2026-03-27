@@ -24,13 +24,13 @@ export async function getArticles(limit = 10, page = 1, searchQuery?: string): P
   return { articles, hasNextPage };
 }
 
-export async function getArticleBySlug(slug: string): Promise<Article | null> {
+export async function getArticleBySlug(slug: string, isDraft = false): Promise<Article | null> {
   const client = getClient();
   const results = await client.request(
     readItems("articles", {
       filter: {
         slug: { _eq: slug },
-        status: { _eq: "published" },
+        ...(isDraft ? {} : { status: { _eq: "published" } }),
       },
       fields: ["id", "slug", "title", "description", "content", "cover_image", "date_created", "date_updated"],
       limit: 1,
