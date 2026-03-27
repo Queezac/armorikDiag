@@ -7,6 +7,7 @@ export async function GET(request: Request) {
   const secret = searchParams.get("secret");
   const slug = searchParams.get("slug");
 
+  console.log("receive draft request", secret, slug);
   if (secret !== process.env.DIRECTUS_PREVIEW_SECRET) {
     return new Response("Invalid secret token", { status: 401 });
   }
