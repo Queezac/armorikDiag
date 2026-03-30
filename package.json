@@ -10,14 +10,16 @@
   },
   "dependencies": {
     "@directus/sdk": "^21.2.0",
+    "lodash": "^4.17.23",
     "next": "16.1.6",
     "nodemailer": "^8.0.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1"
-  },  
+  },
   "devDependencies": {
+    "@types/lodash": "^4.17.24",
     "@types/node": "^20",
     "@types/nodemailer": "^7.0.11",
     "@types/react": "^19",
