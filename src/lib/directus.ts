@@ -27,6 +27,7 @@ export function getClient() {
   let client = createDirectus<DirectusSchema>(DIRECTUS_URL).with(rest());
   
   if (process.env.DIRECTUS_TOKEN) {
+    console.log("Token: ", process.env.DIRECTUS_TOKEN)
     client = client.with(staticToken(process.env.DIRECTUS_TOKEN));
   }
   
