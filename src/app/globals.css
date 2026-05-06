@@ -166,6 +166,15 @@ p {
     overflow: hidden;
 }
 
+.logoAccueil {
+    position: absolute;
+    top: 25vh;
+    left: 12vw;
+    z-index: 2;
+    width: 43vw;
+    height: auto;
+}
+
 .hero {
     height: 80vh;
     color: white;
@@ -1113,6 +1122,10 @@ body.noscroll {
     }
 
     .hero-logo {
+        display: none;
+    }
+
+    .logoAccueil {
         display: none;
     }
 

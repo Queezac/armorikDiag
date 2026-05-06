@@ -5,11 +5,11 @@ import { useState } from "react";
 const faqData = [
     {
         question: "Est-ce que tous les diagnostics ont la même durée de validité ?",
-        answer: "Non, la durée de validité varie selon le diagnostic et les résultats obtenus. Par exemple, le DPE est valable 10 ans, le diagnostic termites a une validité très courte de 6 mois, tandis que le diagnostic plomb ou amiante peut avoir une durée illimitée en l'absence de matériaux défectueux."
+        answer: "Non, le diagnostic état parasitaire à une validité de 6mois, mais est renouvelable une fois, gratuitement. Le diagnostique plomb ou amiante peut avoir une durée illimitée en l'absence de matériaux défectueux."
     },
     {
         question: "Le tarif est-il fixe ou dépend-il de la surface de mon bien ?",
-        answer: "Le tarif d'une intervention dépend principalement de la surface du logement, de son année de construction et du nombre de diagnostics techniques requis. Un devis sur-mesure vous sera toujours proposé avant toute intervention."
+        answer: "Le tarif d'une intervention dépend principalement de la surface du logement et du nombre de diagnostics techniques requis. Un devis sur-mesure vous sera toujours proposé avant toute intervention."
     },
     {
         question: "Que faire si l'un des diagnostics révèle une anomalie ?",
@@ -24,7 +24,7 @@ const faqData = [
         answer: "Il est préférable que vous soyez présent ou représenté, afin de nous permettre de poser quelques questions et de nous donner un accès à l'ensemble du bien (incluant dépendances, caves et greniers)."
     },
     {
-        question: "Intervenez-vous uniquement à Louannec ou aussi dans les communes voisines ?",
+        question: "Intervenez-vous uniquement à Louannec ou aussi dans d'autre commune ?",
         answer: "Nous sommes basés à Louannec, mais nous intervenons avec grande réactivité sur tout le bassin Lannion-Trégor et les communes environnantes."
     }
 ];

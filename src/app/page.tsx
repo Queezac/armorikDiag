@@ -15,6 +15,8 @@ export default function Home() {
           Diagnostiqueur immobilier à Louannec, Lannion et tout le reste du Trégor
         </h1>
 
+        <img src="assets/img/logoPremierePage.png" alt="Logo Armorik Diagnostics" className="logoAccueil" />
+
         <section className="hero" aria-labelledby="intro-title">
           <Image
             src="/assets/img/fondPremierePage.png"
@@ -26,8 +28,8 @@ export default function Home() {
           />
           <div className="presentation">
             <div className="carreRose">
-              <a href="#devis" className="btn-carre"><i className="fas fa-file-text">&nbsp;</i>DEVIS GRATUIT</a>
-              <a href="tel:0296132779" className="btn-carre"><i className="fas fa-phone">&nbsp;</i>02 96 13 27 79</a>
+              <a href="#devis" className="btn-carre">DEVIS GRATUIT</a>
+              <a href="tel:0296132779" className="btn-carre">02 96 13 27 79</a>
             </div>
             <div className="presentation-container">
               <div className="presentation-text">
