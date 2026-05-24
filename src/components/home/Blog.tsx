@@ -18,7 +18,9 @@ export default async function Blog() {
                         <p>Aucun article disponible.</p>
                     ) : (
                         articles.map((article) => (
-                            <CardArticle key={article.id} article={article} />
+                            <li key={article.id}>
+                                <CardArticle article={article} />
+                            </li>
                         ))
                     )
                 }

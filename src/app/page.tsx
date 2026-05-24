@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="presentation-container">
               <div className="presentation-text">
-                <h2 className="titre"><span className="rose">Diagnostics immobiliers</span> sur le bassin Lannion-Trégor</h2>
+                <h2 className="titre"><span className="rose">Diagnostics immobiliers</span> sur le secteur Lannion-Trégor</h2>
                 <p>
                   Que vous vendez ou louez un bien immobilier, certains diagnostics immobiliers <br /> sont obligatoires.
                   Leur nature dépend de l’âge du bâtiment, de ses installations <br /> et du type de transaction.

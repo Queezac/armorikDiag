@@ -128,12 +128,7 @@ p {
 .socials a {
     color: #1A1A1A;
     margin: 0 0.5vw;
-    transition: color 0.3s ease;
     margin-bottom: 0;
-}
-
-.socials a:hover {
-    color: #E3074F;
 }
 
 .socials i {
@@ -168,10 +163,10 @@ p {
 
 .logoAccueil {
     position: absolute;
-    top: 25vh;
-    left: 12vw;
+    top: 14vh;
+    left: 8.3vw;
     z-index: 2;
-    width: 43vw;
+    width: 45vw;
     height: auto;
 }
 
@@ -995,18 +990,23 @@ body.noscroll {
 }
 
 .blog-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4em 6em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    max-width: calc(20vw * 3 + 12em);
+    width: 100%;
+    max-width: 1200px;
 }
 
-.blog-grid>div {
-    flex: 0 1 20vw;
+.blog-grid > li {
+    list-style: none;
+}
+
+.blog-grid > li > div {
+    width: 100%;
 }
 
 .ListeBlog {

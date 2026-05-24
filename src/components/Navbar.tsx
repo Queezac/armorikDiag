@@ -97,10 +97,10 @@ export default function Navbar() {
       <div className="right">
         <div className="socials">
           <a href="https://www.facebook.com/profile.php?id=61588626631757" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook" aria-label="Facebook" style={{ fontSize: '30px' }}></i>
+            <Image src="/assets/img/Facebook.png" alt="Facebook" width={30} height={30} />
           </a>
           <a href="https://www.linkedin.com/in/virginie-le-noa-pellaé-58b390194/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin" aria-label="LinkedIn" style={{ fontSize: '32px' }}></i>
+            <Image src="/assets/img/LinkedIn.png" alt="LinkedIn" width={30} height={30} />
           </a>
         </div>
         <a href="#contact" className="btn-contact" onClick={(e) => handleNavClick(e, "contact")}>NOUS CONTACTER</a>

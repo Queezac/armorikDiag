@@ -16,17 +16,22 @@ export default function Services() {
         <div id="textService">
           <div className="serviceparagraph">
             <p>
-              Basé à Louannec, le cabinet <span className="rose">Armorik Diagnostics</span> s'appuie sur une équipe réactive et qualifiée pour vous accompagner dans vos projets immobiliers. Nous intervenons rapidement sur l'ensemble du <span className="rose">Trégor</span> pour réaliser tous les diagnostics techniques nécessaires.
+              Basé à Louannec, le cabinet <span className="rose">Armorik Diagnostics</span> s&apos;appuie sur une équipe réactive et qualifiée pour vous accompagner dans vos projets immobiliers. Nous intervenons rapidement sur l&apos;ensemble du <span className="rose">Trégor</span> pour réaliser tous les diagnostics techniques nécessaires.
             </p>
           </div>
           <div className="serviceparagraph">
             <p>
-              La fiabilité de nos rapports repose sur l'expertise de notre diagnostiqueuse, certifiée <span className="rose">LCP</span> (COFRAC) et assurée <span className="rose">Klarity</span>. Cette certification vous garantit des contrôles rigoureux, qu'il s'agisse de mesures, d'essais ou de vérifications visuelles de vos installations intérieures.
+              La fiabilité de nos rapports repose sur l&apos;expertise de notre diagnostiqueuse, certifiée <span className="rose">LCP</span> (COFRAC) et assurée <span className="rose">Klarity</span>. Cette certification vous garantit des contrôles rigoureux, qu&apos;il s&apos;agisse de mesures, d&apos;essais ou de vérifications visuelles de vos installations intérieures.
             </p>
           </div>
           <div className="serviceparagraph">
             <p>
-              Notre objectif est simple : vous fournir un document clair et complet, incluant des recommandations concrètes de travaux . Cela vous permet de vous informez précisément ainsi que les futurs occupants et d'assurer la mise en conformité et la sécurité de votre logement.
+              Notre objectif : vous fournir un rapport de diagnostic clair, complet et incluant des recommandations concrètes de travaux pour assurer la conformité et la sécurité de votre logement.
+            </p>
+          </div>
+          <div className="serviceparagraph">
+            <p>
+              Notre atout : vous rendre les rapports sous <span className="rose">72h</span>. Notre mode de fonctionnement nous permet de gagner en efficacité et de vous rendre les documents rapidement pour mettre votre bien à la vente ou à la location.
             </p>
           </div>
         </div>
