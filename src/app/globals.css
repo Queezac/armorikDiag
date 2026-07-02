@@ -976,6 +976,59 @@ body.noscroll {
     padding: 3vh 10vw;
 }
 
+.texte-final a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.texte-final a:hover {
+    color: #E3074F;
+}
+
+#zones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vh;
+
+    background-color: #EDEDED;
+    padding-top: 2vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px -15px 20px -12px inset, rgba(99, 99, 99, 0.2) 0px -18px 36px -18px inset;
+
+}
+
+.zones-intro {
+    margin-bottom: 3vh;
+    text-align: center;
+    padding: 0 5vw;
+}
+
+.zones-liens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 5vw;
+}
+
+.zone-btn {
+    text-decoration: none;
+    background-color: white;
+    color: #E3074F;
+    border: solid 1px #E3074F;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.zone-btn:hover {
+    background-color: #E3074F;
+    color: white;
+}
+
 
 /***************** BLOG ***********************/
 

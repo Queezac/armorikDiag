@@ -3,7 +3,9 @@ import DevisForm from "@/components/home/DevisForm";
 import Diagnostics from "@/components/home/Diagnostics";
 import Faq from "@/components/home/Faq";
 import Services from "@/components/home/Services";
+import ZonesInterventions from "@/components/home/ZonesInterventions";
 import Image from "next/image";
+import Link from "next/link";
 
 export const revalidate = 60;
 
@@ -63,6 +65,8 @@ export default function Home() {
         <Faq />
 
         <Blog />
+
+        <ZonesInterventions />
 
       </main>
     </>

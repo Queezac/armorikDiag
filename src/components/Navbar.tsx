@@ -50,7 +50,7 @@ export default function Navbar() {
     e.preventDefault();
     setMenuOpen(false);
 
-    if (pathname !== "/") {
+    if (pathname !== "/" && id !== "contact") {
       router.push(`/${id ? `#${id}` : ""}`);
       return;
     }

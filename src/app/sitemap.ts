@@ -1,4 +1,5 @@
 import { getAllSlugs } from "@/lib/articles";
+import { villes } from "@/lib/villes";
 import { MetadataRoute } from "next";
 
 export const revalidate = 3600;
@@ -19,6 +20,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    ...Object.values(villes).map((ville) => ({
+      url: `${baseUrl}/${ville.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    })),
     {
       url: `${baseUrl}/mentionLegales`,
       lastModified: new Date(),

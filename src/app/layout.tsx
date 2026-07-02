@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://armorik-diagnostics.fr"),
-  title: "Armorik Diagnostics – Diagnostiqueur immobilier dans le Trégor",
+  title: "Armorik Diagnostics – Diagnostic immobilier Lannion, Louannec & Trégor",
   description: "Armorik Diagnostics : diagnostiqueur immobilier basé à Louannec, intervenant à Lannion, Perros-Guirec et sur tout le Trégor. Rapide, fiable et certifié.",
   keywords: "diagnostic immobilier Lannion, DPE Louannec, diagnostiqueur immobilier 22700, audit énergétique Trégor, diagnostic amiante Perros-Guirec, diagnostic immobilier vente location",
   openGraph: {
@@ -46,7 +46,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "RealEstateAgent",
+              "@type": "ProfessionalService",
+              "@id": "https://armorik-diagnostics.fr/#business",
               "name": "Armorik Diagnostics",
               "alternateName": "Armorik Diagnostics Immobilier",
               "image": "/assets/img/logo1.png",

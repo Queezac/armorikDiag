@@ -1,0 +1,208 @@
+.page {
+    background-color: #f5f5f5;
+    color: #1A1A1A;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5vw;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #757575;
+    padding: 3vh 0 1vh 0;
+}
+
+.breadcrumb a {
+    color: #E3074F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 2vh 0 4vh 0;
+}
+
+.hero h1 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    margin-bottom: 2.5vh;
+}
+
+.hero p {
+    line-height: 1.7;
+    margin-bottom: 1.5vh;
+}
+
+.ctaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3vh;
+}
+
+.btnPlein,
+.btnContour {
+    padding: 12px 28px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btnPlein {
+    background-color: #E3074F;
+    color: white;
+    border: 1px solid #E3074F;
+}
+
+.btnPlein:hover {
+    background-color: #c20542;
+    border-color: #c20542;
+}
+
+.btnContour {
+    background-color: white;
+    color: #E3074F;
+    border: 1px solid #E3074F;
+}
+
+.btnContour:hover {
+    background-color: #E3074F;
+    color: white;
+}
+
+.sectionTitre {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    padding: 5vh 0 3vh 0;
+}
+
+.carte {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3.5vh 2rem;
+    margin-bottom: 3vh;
+}
+
+.carte h2 {
+    font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+    margin-bottom: 2vh;
+}
+
+.carte p {
+    line-height: 1.7;
+    margin-bottom: 1.5vh;
+}
+
+.carte p:last-child {
+    margin-bottom: 0;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.grille article {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3vh 1.5rem;
+    text-align: center;
+}
+
+.grille h3 {
+    color: #E3074F;
+    font-size: 1.05rem;
+    margin-bottom: 1.2vh;
+}
+
+.grille p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.faqBloc {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-bottom: 2vh;
+}
+
+.bandeSombre {
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 7vh 5vw;
+    margin-top: 6vh;
+}
+
+.bandeSombre h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    margin-bottom: 2vh;
+}
+
+.bandeSombre p {
+    margin-bottom: 3vh;
+    line-height: 1.7;
+}
+
+.bandeSombre .ctaRow {
+    justify-content: center;
+    margin-top: 0;
+}
+
+.zones {
+    text-align: center;
+    padding: 4vh 0 6vh 0;
+    line-height: 2;
+}
+
+.zones a {
+    color: #E3074F;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.zones a:hover {
+    text-decoration: underline;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.carte img {
+    max-width: min(1200px, 75%);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 1.8em auto 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .carte {
+        padding: 3vh 1.2rem;
+    }
+
+    .ctaRow {
+        flex-direction: column;
+    }
+
+    .btnPlein,
+    .btnContour {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

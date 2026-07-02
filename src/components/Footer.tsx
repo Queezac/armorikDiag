@@ -110,7 +110,12 @@ export default function Footer() {
 
       <span className="ligneBlanche"></span>
 
-      <p className="texte-final">Diagnostics immobiliers certifiés : DPE, Amiante, Plomb, Électricité, Gaz, Termites, ERP, Loi Carrez — interventions sur TOUT LE TRÉGOR.</p>
+      <p className="texte-final">
+        Diagnostics immobiliers certifiés : DPE, Amiante, Plomb, Électricité, Gaz, Termites, ERP, Loi Carrez — interventions sur TOUT LE TRÉGOR :{" "}
+        <Link href="/diagnostic-immobilier-lannion">Lannion</Link>,{" "}
+        <Link href="/diagnostic-immobilier-perros-guirec">Perros-Guirec</Link>,{" "}
+        <Link href="/diagnostic-immobilier-tregastel">Trégastel</Link>, Louannec et communes voisines.
+      </p>
 
     </footer >
   );
