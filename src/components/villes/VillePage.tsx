@@ -81,10 +81,9 @@ export default function VillePage({ ville }: { ville: Ville }) {
             <p key={i}>{paragraphe}</p>
           ))}
           <div className={styles.ctaRow}>
-            <Link href="/#devis" className={styles.btnPlein}>DEVIS GRATUIT</Link>
             <a href="tel:0296132779" className={styles.btnContour}>02 96 13 27 79</a>
-
-            <Link href="/" className={`${styles.btnPlein} ${styles.right}`}>Qui sommes-nous ?</Link>
+            <Link href="/" className={`${styles.btnContour}`}>Qui sommes-nous ?</Link>
+            <Link href="/#devis" className={`${styles.btnPlein} ${styles.right}`}>DEVIS GRATUIT</Link>
           </div>
         </header>
 

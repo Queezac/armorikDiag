@@ -121,11 +121,7 @@ export default async function ArticlePage(props: {
   return (
     <>
       <ArticleJsonLd article={article} />
-
-      <header className={styles.articleHeader}></header>
-
-      <hr className="ligneNoire2" aria-hidden="true" />
-
+      
       {isDraft ? (
         <LivePreview initialArticle={article} />
       ) : (
