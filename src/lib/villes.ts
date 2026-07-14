@@ -48,14 +48,14 @@ export const villes: Record<string, Ville> = {
       {
         titre: "Propriétaires bailleurs : un marché locatif exigeant",
         paragraphes: [
-          "Avec les étudiants de l'IUT et de l'ENSSAT et les salariés de la technopole, la demande locative est soutenue à Lannion. Pour louer en toute légalité, votre dossier de diagnostic technique doit comporter un DPE, l'état des installations électriques et gaz de plus de 15 ans, l'ERP et, pour une location vide, la surface loi Boutin.",
+          "Avec les étudiants de l'IUT et de l'ENSSAT et les salariés de la technopole, la demande locative est soutenue à Lannion. Pour louer en toute légalité, votre dossier de diagnostic technique doit comporter un DPE, le constat de risque d'exposition au plomb (CREP) obligatoire pour les logements construits avant 1949, l'état des installations électriques et gaz de plus de 15 ans, l'ERP et, pour une location vide, la surface loi Boutin.",
           "Rappel important pour les bailleurs lannionnais : depuis le 1er janvier 2025, les logements classés G au DPE ne peuvent plus être mis en location. Un DPE récent vous permet d'anticiper, et un audit énergétique de planifier les travaux si votre bien est concerné.",
         ],
       },
       {
         titre: "Une intervention rapide, depuis Louannec",
         paragraphes: [
-          "Notre cabinet est installé à Louannec, à moins de 15 minutes du centre de Lannion. Cette proximité nous permet de proposer des créneaux courts, y compris lorsque votre notaire ou votre agence attend un rapport pour finaliser un dossier. Tous les diagnostics d'un même bien sont regroupés en une seule visite.",
+          "Notre cabinet est installé à Louannec, à moins de 15 minutes du centre de Lannion. Cette proximité nous permet de proposer des créneaux courts, y compris lorsque votre notaire ou votre agence attend un rapport pour finaliser un dossier.",
         ],
       },
     ],
@@ -71,7 +71,7 @@ export const villes: Record<string, Ville> = {
       {
         question: "Sous quel délai pouvez-vous intervenir à Lannion ?",
         answer:
-          "Généralement sous quelques jours ouvrés. Louannec est à un quart d'heure de Lannion, ce qui nous permet d'être très réactifs, notamment lorsqu'un compromis de vente attend un rapport.",
+          "Généralement sous quelques jours ouvrés. Nous sommes très réactifs sur la remise des rapports, transmis le jour même ou le lendemain de la visite, notamment lorsqu'un compromis de vente attend un rapport.",
       },
       {
         question: "Quels diagnostics pour vendre une maison ancienne à Brélévenez ou dans le centre historique ?",
@@ -176,8 +176,8 @@ export const villes: Record<string, Ville> = {
     metaDescription:
       "Diagnostics immobiliers à Trégastel : DPE, amiante, état parasitaire (mérule), loi Carrez, ERP. Diagnostiqueur certifié basé à Louannec, à 15 minutes. Devis gratuit.",
     chapeau: [
-      "Station familiale de la côte de granit rose, Trégastel séduit autant les résidents à l'année que les propriétaires de maisons de vacances. Que vous vendiez une maison en granit près du Coz-Pors ou mettiez en location un logement au bourg, Armorik Diagnostics réalise tous vos diagnostics immobiliers obligatoires, en une seule visite.",
-      "Basés à Louannec, à un quart d'heure de Trégastel, nous intervenons toute l'année avec des rapports certifiés remis rapidement.",
+      "Station familiale de la côte de granit rose, Trégastel séduit autant les résidents à l'année que les propriétaires de maisons de vacances. Que vous vendiez une maison en granit près du Coz-Pors ou mettiez en location un logement au bourg, Armorik Diagnostics réalise tous vos diagnostics immobiliers obligatoires.",
+      "Basés à Louannec, à un quart d'heure de Trégastel, nous intervenons toute l'année avec des rapports certifiés remis le jour même ou au plus tard le lendemain.",
     ],
     sections: [
       {
@@ -201,7 +201,7 @@ export const villes: Record<string, Ville> = {
       {
         titre: "À un quart d'heure de notre cabinet",
         paragraphes: [
-          "Depuis Louannec, nous rejoignons Trégastel en une quinzaine de minutes par la côte. Nous regroupons tous les diagnostics de votre bien en une seule intervention et couvrons également les communes voisines.",
+          "Depuis Louannec, nous rejoignons Trégastel en une quinzaine de minutes par la côte. Nous couvrons également les communes voisines.",
         ],
       },
     ],
@@ -227,12 +227,12 @@ export const villes: Record<string, Ville> = {
       {
         question: "Je n'habite pas la région : comment organisez-vous la visite ?",
         answer:
-          "Nous convenons d'un accès avec votre agence, votre notaire ou une personne de confiance sur place. Tous les diagnostics sont réalisés en une seule visite et les rapports vous sont envoyés par email.",
+          "Nous convenons d'un accès avec votre agence, votre notaire ou une personne de confiance sur place. Les rapports vous sont ensuite envoyés par email dans la journée ou le lendemain de la visite.",
       },
       {
         question: "Intervenez-vous aussi autour de Trégastel ?",
         answer:
-          "Oui : Pleumeur-Bodou, l'Île-Grande, Trébeurden, Perros-Guirec et tout le reste du Trégor. Notre cabinet de Louannec est à une quinzaine de minutes.",
+          "Oui, notre cabinet se situe à 15 minutes de toutes ces communes : Pleumeur-Bodou, l'Île-Grande, Trébeurden, Perros-Guirec et tout le reste du Trégor.",
       },
     ],
     communesVoisines: ["Pleumeur-Bodou", "L'Île-Grande", "Trébeurden", "Perros-Guirec"],
