@@ -232,7 +232,7 @@ export const villes: Record<string, Ville> = {
       {
         question: "Intervenez-vous aussi autour de Trégastel ?",
         answer:
-          "Oui, notre cabinet se situe à 15 minutes de toutes ces communes : Pleumeur-Bodou, l'Île-Grande, Trébeurden, Perros-Guirec et tout le reste du Trégor.",
+          "Oui, notre cabinet se situe à 15 minutes de toutes ces communes : Pleumeur-Bodou, l'Île-Grande, Trébeurden, Perros-Guirec et tout le reste du Trégor. Plus largement, nous intervenons dans toutes les Côtes-d'Armor.",
       },
     ],
     communesVoisines: ["Pleumeur-Bodou", "L'Île-Grande", "Trébeurden", "Perros-Guirec"],

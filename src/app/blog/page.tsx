@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blog – Armorik Diagnostics",
     description:
-      "Conseils et actualités sur les diagnostics immobiliers dans le Trégor.",
+      "Conseils et actualités sur les diagnostics immobiliers dans les Côtes-d'Armor.",
     url: "https://armorik-diagnostics.fr/blog",
     type: "website",
     images: [{ url: "/assets/img/logo1.png" }],

@@ -13,9 +13,9 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://armorik-diagnostics.fr"),
-  title: "Armorik Diagnostics – Diagnostic immobilier Lannion, Louannec & Trégor",
-  description: "Armorik Diagnostics : diagnostiqueur immobilier basé à Louannec, intervenant à Lannion, Perros-Guirec et sur tout le Trégor. Rapide, fiable et certifié.",
-  keywords: "diagnostic immobilier Lannion, DPE Louannec, diagnostiqueur immobilier 22700, audit énergétique Trégor, diagnostic amiante Perros-Guirec, diagnostic immobilier vente location",
+  title: "Armorik Diagnostics – Diagnostic immobilier Lannion, Louannec & Côtes-d'Armor",
+  description: "Armorik Diagnostics : diagnostiqueur immobilier basé à Louannec, intervenant à Lannion, Perros-Guirec et dans toutes les Côtes-d'Armor (22). Rapide, fiable et certifié.",
+  keywords: "diagnostic immobilier Lannion, DPE Louannec, diagnostiqueur immobilier 22700, audit énergétique Côtes-d'Armor, diagnostic immobilier Côtes-d'Armor, DPE Saint-Brieuc, diagnostic immobilier Guingamp, diagnostic amiante Perros-Guirec, diagnostic immobilier vente location",
   openGraph: {
     title: "Armorik Diagnostics - Expert en diagnostics immobiliers",
     description: "Découvrez nos services de diagnostics immobiliers obligatoires et certifié. Contactez-nous pour un devis rapide.",
@@ -107,7 +107,14 @@ export default function RootLayout({
                 { "@type": "City", "name": "Plestin-les-Grèves" },
                 { "@type": "City", "name": "Ploumilliau" },
                 { "@type": "City", "name": "Morlaix" },
-                { "@type": "Place", "name": "Trégor" }
+                { "@type": "City", "name": "Saint-Brieuc" },
+                { "@type": "City", "name": "Guingamp" },
+                { "@type": "City", "name": "Paimpol" },
+                { "@type": "City", "name": "Dinan" },
+                { "@type": "City", "name": "Lamballe-Armor" },
+                { "@type": "City", "name": "Loudéac" },
+                { "@type": "Place", "name": "Trégor" },
+                { "@type": "AdministrativeArea", "name": "Côtes-d'Armor" }
               ]
             })
           }}

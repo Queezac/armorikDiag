@@ -111,10 +111,10 @@ export default function Footer() {
       <span className="ligneBlanche"></span>
 
       <p className="texte-final">
-        Diagnostics immobiliers certifiés : DPE, Amiante, Plomb, Électricité, Gaz, Termites, ERP, Loi Carrez — interventions sur TOUT LE TRÉGOR :{" "}
+        Diagnostics immobiliers certifiés : DPE, Amiante, Plomb, Électricité, Gaz, Termites, ERP, Loi Carrez — interventions dans TOUTES LES CÔTES-D&apos;ARMOR :{" "}
         <Link href="/diagnostic-immobilier-lannion">Lannion</Link>,{" "}
         <Link href="/diagnostic-immobilier-perros-guirec">Perros-Guirec</Link>,{" "}
-        <Link href="/diagnostic-immobilier-tregastel">Trégastel</Link>, Louannec et communes voisines.
+        <Link href="/diagnostic-immobilier-tregastel">Trégastel</Link>, Louannec, Saint-Brieuc, Guingamp, Paimpol, Dinan et l&apos;ensemble du département.
       </p>
 
     </footer >

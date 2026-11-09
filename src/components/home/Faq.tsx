@@ -25,7 +25,7 @@ const faqData = [
     },
     {
         question: "Intervenez-vous uniquement à Louannec ou aussi dans d'autre commune ?",
-        answer: "Nous sommes basés à Louannec, mais nous intervenons avec grande réactivité sur tout le bassin Lannion-Trégor et les communes environnantes."
+        answer: "Nous sommes basés à Louannec, mais nous intervenons avec grande réactivité dans toutes les Côtes-d'Armor : Lannion, Perros-Guirec, Paimpol, Guingamp, Saint-Brieuc, Dinan et l'ensemble des communes du département."
     }
 ];
 

@@ -16,7 +16,7 @@ export default function Services() {
         <div id="textService">
           <div className="serviceparagraph">
             <p>
-              Basé à Louannec, le cabinet <span className="rose">Armorik Diagnostics</span> s&apos;appuie sur une équipe réactive et qualifiée pour vous accompagner dans vos projets immobiliers. Nous intervenons rapidement sur l&apos;ensemble du <span className="rose">Trégor</span> pour réaliser tous les diagnostics techniques nécessaires.
+              Basé à Louannec, le cabinet <span className="rose">Armorik Diagnostics</span> s&apos;appuie sur une équipe réactive et qualifiée pour vous accompagner dans vos projets immobiliers. Nous intervenons rapidement sur l&apos;ensemble des <span className="rose">Côtes-d&apos;Armor</span> pour réaliser tous les diagnostics techniques nécessaires.
             </p>
           </div>
           <div className="serviceparagraph">

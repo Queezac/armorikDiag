@@ -48,7 +48,7 @@ function buildEmailHtml(subject: string, messageRaw: string, replyTo: string): s
                 ARMORIK DIAGNOSTICS
               </p>
               <p style="margin:6px 0 0;font-size:13px;color:rgba(255,255,255,0.85);">
-                Diagnostiqueur immobilier certifié – Trégor
+                Diagnostiqueur immobilier certifié – Côtes-d'Armor
               </p>
             </td>
           </tr>

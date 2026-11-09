@@ -7,7 +7,7 @@ export default function ZonesInterventions() {
                <section id="zones" aria-labelledby="zones-title">
                   <h2 id="zones-title" className="section" style={{ paddingBottom: '2vh' }}>NOS ZONES D&apos;INTERVENTION</h2>
                   <p className="zones-intro">
-                    Basés à <span className="rose">Louannec</span>, nous intervenons dans tout le Trégor :
+                    Basés à <span className="rose">Louannec</span>, nous intervenons dans toutes les <span className="rose">Côtes-d&apos;Armor</span>, notamment :
                   </p>
                   <div className="zones-liens">
                     {

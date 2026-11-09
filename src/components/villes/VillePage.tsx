@@ -121,7 +121,7 @@ export default function VillePage({ ville }: { ville: Ville }) {
         </section>
 
         <p className={styles.zones}>
-          Armorik Diagnostics intervient aussi à {ville.communesVoisines.join(", ")} et dans tout le Trégor.
+          Armorik Diagnostics intervient aussi à {ville.communesVoisines.join(", ")} et dans toutes les Côtes-d&apos;Armor.
           <br />
           Voir aussi :{" "}
           {ville.autresVilles.map((cle, i) => (

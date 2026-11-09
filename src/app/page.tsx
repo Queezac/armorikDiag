@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <main>
         <h1 className="seo-h1">
-          Diagnostiqueur immobilier à Louannec, Lannion et tout le reste du Trégor
+          Diagnostiqueur immobilier à Louannec, Lannion et dans toutes les Côtes-d&apos;Armor
         </h1>
 
         <img src="assets/img/logoPremierePage.png" alt="Logo Armorik Diagnostics" className="logoAccueil" />
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             <div className="presentation-container">
               <div className="presentation-text">
-                <h2 className="titre"><span className="rose">Diagnostics immobiliers</span> sur le secteur Lannion-Trégor</h2>
+                <h2 className="titre"><span className="rose">Diagnostics immobiliers</span> dans toutes les Côtes-d&apos;Armor</h2>
                 <p>
                   Que vous vendez ou louez un bien immobilier, certains diagnostics immobiliers <br /> sont obligatoires.
                   Leur nature dépend de l’âge du bâtiment, de ses installations <br /> et du type de transaction.
